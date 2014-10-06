@@ -109,13 +109,13 @@
       <Project>{BD338223-281E-4D12-BE73-2F596AE602CC}</Project>
       <Name>XamFormsFSharpRxUITipCalc</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\reactiveproperty\Source\ReactiveProperty.Portable-Profile78\ReactiveProperty.Portable.csproj">
-      <Project>{D5FCE62E-0718-43C4-A103-69C155D8D402}</Project>
-      <Name>ReactiveProperty.Portable</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\FSharp.Control.Reactive\src\FSharp.Control.Reactive.fsproj">
       <Project>{ED23F688-C0D0-4102-93D5-0D832633F66D}</Project>
       <Name>FSharp.Control.Reactive</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\vendors\reactiveproperty\Source\ReactiveProperty.Portable-Profile78\ReactiveProperty.Portable.csproj">
+      <Project>{D5FCE62E-0718-43C4-A103-69C155D8D402}</Project>
+      <Name>ReactiveProperty.Portable</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

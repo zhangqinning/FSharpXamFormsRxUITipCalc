@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "XamFormsFSharpRxUITipCalc", "XamFormsFSharpRxUITipCalc\XamFormsFSharpRxUITipCalc.fsproj", "{BD338223-281E-4D12-BE73-2F596AE602CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveProperty.Portable", "reactiveproperty\Source\ReactiveProperty.Portable-Profile78\ReactiveProperty.Portable.csproj", "{D5FCE62E-0718-43C4-A103-69C155D8D402}"
-EndProject
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "FSharp.Control.Reactive", "FSharp.Control.Reactive\src\FSharp.Control.Reactive.fsproj", "{ED23F688-C0D0-4102-93D5-0D832633F66D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{6615B669-6588-4EE5-AF6D-C1CD5B2D408B}"
@@ -16,6 +14,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{F798F94C-7E71-47BD-8DB8-65D4199E698A}"
 EndProject
 Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "XamFormsFSharpRxUITipCalcDroid", "Platforms\Android\XamFormsFSharpRxUITipCalcDroid\XamFormsFSharpRxUITipCalcDroid.fsproj", "{FD4A7FB3-A9D2-4238-B969-6549617D81BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveProperty.Portable", "vendors\reactiveproperty\Source\ReactiveProperty.Portable-Profile78\ReactiveProperty.Portable.csproj", "{D5FCE62E-0718-43C4-A103-69C155D8D402}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
