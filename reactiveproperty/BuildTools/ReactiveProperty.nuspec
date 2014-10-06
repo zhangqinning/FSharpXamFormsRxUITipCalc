@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ReactiveProperty</id>
+    <version>1.0.2.0</version>
+    <title>ReactiveProperty Portable</title>
+    <authors>neuecc xin9le okazuki</authors>
+    <owners>neuecc xin9le okazuki</owners>
+    <licenseUrl>http://reactiveproperty.codeplex.com/license</licenseUrl>
+    <projectUrl>http://reactiveproperty.codeplex.com/</projectUrl>
+    <iconUrl>http://neue.cc/ReactivePropertyIcon_100x100.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ReactiveProperty is MVVM and Asynchronous Extensions for Reactive Extensions(Rx-Main). Target is .NET 4, WP8, Windows store apps(Win8.1), Windows Phone 8.1.</description>
+    <summary />
+    <language>en-US</language>
+    <tags>rx mvvm async rx-main</tags>
+    <dependencies>
+      <group targetFramework="net4">
+        <dependency id="Rx-Main" version="2.2.5" />
+        <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+        <dependency id="Microsoft.Bcl" version="1.1.9" />
+      </group>
+      <group targetFramework="net45">
+        <dependency id="Rx-Main" version="2.2.5" />
+      </group>
+      <group targetFramework="wp8">
+        <dependency id="Rx-Main" version="2.2.5" />
+        <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+        <dependency id="Microsoft.Bcl" version="1.1.9" />
+      </group>
+      <group targetFramework="wpa81">
+        <dependency id="Rx-Main" version="2.2.5" />
+      </group>
+      <group targetFramework="win81">
+        <dependency id="Rx-Main" version="2.2.5" />
+      </group>
+      <group targetFramework="MonoAndroid">
+        <dependency id="Rx-Main" version="2.2.5" />
+      </group>
+      <group targetFramework="MonoTouch">
+        <dependency id="Rx-Main" version="2.2.5" />
+     </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="PresentationCore" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="WindowsBase" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="PresentationFramework" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Xaml" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.ComponentModel.DataAnnotations" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Runtime.Serialization" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="..\Snippet\*.snippet" target="Snippet\" />
+    <file src="..\Docs\ReadMe.txt" target="Docs\" />
+
+    <!-- platform -->
+    <!-- WPF NET4 -->
+    <file src="..\Binary\NET4\ReactiveProperty.NET4.dll" target="lib\net4" />
+    <file src="..\Binary\NET4\ReactiveProperty.NET4.XML" target="lib\net4" />
+
+    <!-- WPF NET45 -->
+    <file src="..\Binary\NET45\ReactiveProperty.NET45.dll" target="lib\net45" />
+    <file src="..\Binary\NET45\ReactiveProperty.NET45.XML" target="lib\net45" />
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.dll" target="lib\net45" />
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.XML" target="lib\net45" />
+    <file src="..\Binary\PCL\ReactiveProperty.dll" target="lib\net45" />
+    <file src="..\Binary\PCL\ReactiveProperty.XML" target="lib\net45" />
+
+    <!-- WinRT -->
+    <file src="..\Binary\WinRT\ReactiveProperty.WinRT.dll" target="lib\win81" />
+    <file src="..\Binary\WinRT\ReactiveProperty.WinRT.XML" target="lib\win81" />
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.dll" target="lib\win81" />
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.XML" target="lib\win81" />
+    <file src="..\Binary\PCL\ReactiveProperty.dll" target="lib\win81" />
+    <file src="..\Binary\PCL\ReactiveProperty.XML" target="lib\win81" />
+
+    <!-- WP8 -->
+    <file src="..\Binary\WP8\ReactiveProperty.WP8.dll" target="lib\wp8" />
+    <file src="..\Binary\WP8\ReactiveProperty.WP8.XML" target="lib\wp8" />
+    <file src="..\Binary\PCL\ReactiveProperty.dll" target="lib\wp8" />
+    <file src="..\Binary\PCL\ReactiveProperty.XML" target="lib\wp8" />
+
+    <!-- WPA81 -->
+    <file src="..\Binary\WPA81\ReactiveProperty.WPA81.dll" target="lib\wpa81" />
+    <file src="..\Binary\WPA81\ReactiveProperty.WPA81.XML" target="lib\wpa81" />
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.dll" target="lib\wpa81" />
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.XML" target="lib\wpa81" />
+    <file src="..\Binary\PCL\ReactiveProperty.dll" target="lib\wpa81" />
+    <file src="..\Binary\PCL\ReactiveProperty.XML" target="lib\wpa81" />
+
+    <!-- Mono.Android -->
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.dll" target="lib\MonoAndroid" />
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.XML" target="lib\MonoANdroid" />
+    <file src="..\Binary\PCL\ReactiveProperty.dll" target="lib\MonoAndroid" />
+    <file src="..\Binary\PCL\ReactiveProperty.XML" target="lib\MonoANdroid" />
+    
+    <!-- Mono.Touch -->
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.dll" target="lib\MonoTouch" />
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.XML" target="lib\MonoTouch" />
+    <file src="..\Binary\PCL\ReactiveProperty.dll" target="lib\MonoTouch" />
+    <file src="..\Binary\PCL\ReactiveProperty.XML" target="lib\MonoTouch" />
+    
+    <!-- Universal app -->
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.dll" target="lib\portable-win81+wpa81" />
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.XML" target="lib\portable-win81+wpa81" />
+    <file src="..\Binary\PCL\ReactiveProperty.dll" target="lib\portable-win81+wpa81" />
+    <file src="..\Binary\PCL\ReactiveProperty.XML" target="lib\portable-win81+wpa81" />
+
+    <!-- PCL(ignore WP8) -->
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.dll" target="lib\portable-net45+win81+wpa81" />
+    <file src="..\Binary\PCL\ReactiveProperty.DataAnnotations.XML" target="lib\portable-net45+win81+wpa81" />
+    <file src="..\Binary\PCL\ReactiveProperty.dll" target="lib\portable-net45+win81+wpa81" />
+    <file src="..\Binary\PCL\ReactiveProperty.XML" target="lib\portable-net45+win81+wpa81" />
+
+    <!-- PCL(All) -->
+    <file src="..\Binary\PCL\ReactiveProperty.dll" target="lib\portable-net45+WP8+win81+wpa81" />
+    <file src="..\Binary\PCL\ReactiveProperty.XML" target="lib\portable-net45+WP8+win81+wpa81" />
+  </files>
+</package>
