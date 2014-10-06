@@ -23,10 +23,10 @@ namespace XamFormsFSharpRxUITipCalc
     #nowarn "51" // address-of operator can occur in the code
     #nowarn "1183" // unused 'this' reference
     
-    exception ReturnExceptiona33beb52fcbe4b62bbd176e52c388f0e of obj
-    exception ReturnNoneExceptiona33beb52fcbe4b62bbd176e52c388f0e
+    exception ReturnExceptioncd49a8744bd242b8b9a5a7fdb520f683 of obj
+    exception ReturnNoneExceptioncd49a8744bd242b8b9a5a7fdb520f683
     [<AutoOpen>]
-    module FuncConvertFinalOverloada33beb52fcbe4b62bbd176e52c388f0e =
+    module FuncConvertFinalOverloadcd49a8744bd242b8b9a5a7fdb520f683 =
       // This extension member adds to the FuncConvert type and is the last resort member in the method overloading rules. 
       type global.Microsoft.FSharp.Core.FuncConvert with
           /// A utility function to convert function values from tupled to curried form

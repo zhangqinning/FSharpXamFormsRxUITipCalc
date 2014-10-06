@@ -3,6 +3,8 @@ FSharpXamFormsRxUITipCalc
 
 An example of using F#, Xamarin.Forms, and PCLs with Rx and ReactiveProperty on iOS and Android
 
+From my blog post: [http://pillowsoft.com/blog/files/fsharp-xamforms-rx-ui.html](http://pillowsoft.com/blog/files/fsharp-xamforms-rx-ui.html)
+
 
 Recently a PCL (Portable Class Library) compliant F# Core for Mono was released on [Nuget](https://www.nuget.org/packages/FSharp.Core.Mono.Signed/). This DLL, along with Mono assembly facades, allows one to use profile 78 with F# for iOS and Android development in Xamarin studio.  Larry O’Brien had a [blog post](http://www.knowing.net/index.php/2014/08/27/xamarin-forms-programming-in-f/) initially describing some of this. I have posted on GitHub a simple project for Xamarin studio,  that builds a simple tip calculator for iOS and Android using [ReactiveProperty from CodePlex](https://reactiveproperty.codeplex.com/).  I initially tried to do the demo using [ReactiveUI](http://www.reactiveui.net/), but ReactiveUI makes heavy use of expression lambdas, a.k.a. quotations in F sharp. Alas, these appear to be broken at the moment in the Mono PCL F# Core.  As soon as I get that figured out and quotations work, I will repost the same demo using ReactiveUI.
 
