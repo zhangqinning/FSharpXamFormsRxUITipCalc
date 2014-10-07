@@ -4,11 +4,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{F2A71F9B-5D33-465A-A702-920D77279786}</ProjectTypeGuids>
-    <ProjectGuid>{2ADBB84F-48AB-4090-A1E3-2F1FCEB4F9B3}</ProjectGuid>
+    <ProjectGuid>{459B17C2-F66F-43E5-866C-AA9CE4E5B781}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>XamFormsFSharpRxUITipCalc</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>XamarinFormsFSharpRxUITipCalc</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,14 +22,14 @@
     <PlatformTarget>
     </PlatformTarget>
     <MtouchDebug>true</MtouchDebug>
-    <MtouchLink>None</MtouchLink>
     <MtouchI18n>
     </MtouchI18n>
     <MtouchArch>i386</MtouchArch>
+    <AssemblyName>XamFormsFSharpRxUITipCalc</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
@@ -40,6 +39,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <ConsolePause>false</ConsolePause>
     <Tailcalls>true</Tailcalls>
+    <AssemblyName>XamFormsFSharpRxUITipCalc</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,14 +57,17 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <IpaPackageName>
     </IpaPackageName>
-    <MtouchLink>None</MtouchLink>
     <MtouchI18n>
     </MtouchI18n>
-    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchArch>ARMv7s</MtouchArch>
+    <MtouchExtraArgs>-vvv</MtouchExtraArgs>
+    <MtouchSdkVersion>8.0</MtouchSdkVersion>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <AssemblyName>XamarinFormsFSharpRxUITipCalc</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
@@ -74,10 +77,11 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <ConsolePause>false</ConsolePause>
     <Tailcalls>true</Tailcalls>
+    <AssemblyName>XamarinFormsFSharpRxUITipCalc</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
     <ErrorReport>prompt</ErrorReport>
@@ -89,10 +93,11 @@
     <CodesignProvision>Automatic:AdHoc</CodesignProvision>
     <ConsolePause>false</ConsolePause>
     <Tailcalls>true</Tailcalls>
+    <AssemblyName>XamarinFormsFSharpRxUITipCalc</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\iPhone\AppStore</OutputPath>
     <ErrorReport>prompt</ErrorReport>
@@ -103,33 +108,15 @@
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
     <ConsolePause>false</ConsolePause>
     <Tailcalls>true</Tailcalls>
+    <AssemblyName>XamarinFormsFSharpRxUITipCalc</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="mscorlib" />
     <Reference Include="monotouch" />
-    <Reference Include="Xamarin.Forms.Platform.iOS">
-      <HintPath>..\..\..\packages\Xamarin.Forms.1.2.3.6257\lib\MonoTouch10\Xamarin.Forms.Platform.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Core">
-      <HintPath>..\..\..\packages\Xamarin.Forms.1.2.3.6257\lib\MonoTouch10\Xamarin.Forms.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Xaml">
-      <HintPath>..\..\..\packages\Xamarin.Forms.1.2.3.6257\lib\MonoTouch10\Xamarin.Forms.Xaml.dll</HintPath>
-    </Reference>
-    <Reference Include="Splat">
-      <HintPath>..\..\..\packages\Splat.1.5.1\lib\monotouch\Splat.dll</HintPath>
-    </Reference>
     <Reference Include="FSharp.Core">
       <HintPath>..\..\..\packages\FSharp.Core.Mono.Signed.3.1.1.27\lib\MonoTouch\FSharp.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime">
-      <HintPath>\Developer\MonoTouch\usr\lib\mono\2.1\Facades\System.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ObjectModel">
-      <HintPath>\Developer\MonoTouch\usr\lib\mono\2.1\Facades\System.ObjectModel.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.Interfaces">
       <HintPath>..\..\..\packages\Rx-Interfaces.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Interfaces.dll</HintPath>
@@ -143,15 +130,19 @@
     <Reference Include="System.Reactive.PlatformServices">
       <HintPath>..\..\..\packages\Rx-PlatformServices.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.PlatformServices.dll</HintPath>
     </Reference>
-    <Reference Include="ReactiveUI">
-      <HintPath>..\..\..\packages\reactiveui-core.6.1.0\lib\Monotouch\ReactiveUI.dll</HintPath>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\..\..\packages\Xamarin.Forms.1.2.3.6257\lib\MonoTouch10\Xamarin.Forms.Platform.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="ReactiveUI.Events_XamForms">
-      <HintPath>..\..\..\packages\reactiveui-xamforms.6.1.0\lib\Portable-Net45+WinRT45+WP8+MonoAndroid10+MonoTouch10\ReactiveUI.Events_XamForms.dll</HintPath>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\..\..\packages\Xamarin.Forms.1.2.3.6257\lib\MonoTouch10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
-    <Reference Include="ReactiveUI.XamForms">
-      <HintPath>..\..\..\packages\reactiveui-xamforms.6.1.0\lib\Portable-Net45+WinRT45+WP8+MonoAndroid10+MonoTouch10\ReactiveUI.XamForms.dll</HintPath>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\..\..\packages\Xamarin.Forms.1.2.3.6257\lib\MonoTouch10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\..\..\packages\Splat.1.5.1\lib\monotouch\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -165,9 +156,10 @@
   <ItemGroup>
     <Compile Include="AppDelegate.fs" />
   </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.1\Framework\v4.0\Microsoft.FSharp.Targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
   <Import Project="..\..\..\packages\Xamarin.Forms.1.2.3.6257\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\..\..\packages\Xamarin.Forms.1.2.3.6257\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\..\..\XamFormsFSharpRxUITipCalc\XamFormsFSharpRxUITipCalc.fsproj">
       <Project>{BD338223-281E-4D12-BE73-2F596AE602CC}</Project>

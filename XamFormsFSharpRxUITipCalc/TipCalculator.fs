@@ -5,6 +5,7 @@ open Codeplex.Reactive
 open Xamarin.Forms
 open ReactivePropertyUIHelpers
 open FSharp.Control.Reactive
+open System.Diagnostics
 
 
 type TipCalculatorViewModel() = 
@@ -99,9 +100,13 @@ type TitCalculatorPage(vm:TipCalculatorViewModel) as this =
         bindEntryTextChangesTwoWayConverter (tipPercent) (vm.TipPercent) (DoubleRoundingFloatToTextConverter 1.) |> ignore
         bindSliderValueChangedTwoWayConverter tipPercentSlider (vm.TipPercent) (DoubleRoundingFloatToFloatConverter 1.) |> ignore
 
+        let doit(fValue:float) =
+            let name = toPropName <@ vm.TipAmount @>
+            Debug.WriteLine(name)
+
         // uncomment these two lines, this slide the slider to invoke the quotation and see this issue with quotations and PCL-Profile78
         //let doit = fun x -> <@ vm.TipAmount @> |> ignore
-        //bindSliderValueChanged tipPercentSlider doit |> ignore
+        bindSliderValueChanged tipPercentSlider doit |> ignore
 
 
         bindEntryTextChangesTwoWayConverter (subTotal) (vm.SubTotal) (DoubleRoundingFloatToTextConverter 0.1) |> ignore
